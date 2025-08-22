@@ -1,0 +1,225 @@
+.letter-back {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    0 10px 20px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  text-align: center;
+  opacity: 0;
+  transform: rotateY(-180deg) scale(0.8);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+
+.letter-back::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 22px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.letter-back.visible {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1);
+}
+
+.letter-svg-container {
+  margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.title-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  fill: #333;
+  font-weight: 600;
+}
+
+.subtitle-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  fill: #666;
+  font-weight: 400;
+}
+
+.floating-elements {
+  animation: float 4s ease-in-out infinite;
+}
+
+.language-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.language-button {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px solid #dee2e6;
+  border-radius: 15px;
+  padding: 20px 30px;
+  width: 320px;
+  max-width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInUp 0.6s ease forwards;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.language-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: left 0.3s ease;
+  z-index: 1;
+}
+
+.language-button:hover::before {
+  left: 0;
+}
+
+.language-button:hover {
+  border-color: #667eea;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+}
+
+.language-button:hover .language-content,
+.language-button:hover .language-arrow {
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.language-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  position: relative;
+}
+
+.language-native {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+  line-height: 1.2;
+}
+
+.language-english {
+  font-size: 14px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.language-arrow {
+  font-size: 24px;
+  color: #667eea;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.language-button:hover .language-arrow {
+  transform: translateX(8px);
+}
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-5px) rotate(1deg); }
+  50% { transform: translateY(-3px) rotate(0deg); }
+  75% { transform: translateY(-7px) rotate(-1deg); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .letter-back {
+    padding: 25px;
+    margin: 15px;
+    border-radius: 15px;
+  }
+  
+  .letter-svg-container {
+    width: 320px;
+    height: 240px;
+  }
+  
+  .language-button {
+    width: 280px;
+    padding: 18px 25px;
+  }
+  
+  .language-native {
+    font-size: 18px;
+  }
+  
+  .language-english {
+    font-size: 13px;
+  }
+  
+  .language-arrow {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .letter-back {
+    padding: 20px;
+  }
+  
+  .letter-svg-container {
+    width: 280px;
+    height: 210px;
+  }
+  
+  .language-button {
+    width: 250px;
+    padding: 15px 20px;
+  }
+  
+  .language-native {
+    font-size: 16px;
+  }
+  
+  .language-english {
+    font-size: 12px;
+  }
+  
+  .title-text {
+    font-size: 16px;
+  }
+  
+  .subtitle-text {
+    font-size: 10px;
+  }
+}
+

@@ -1,0 +1,301 @@
+{
+  "home": {
+    "en": {
+      "id": "home",
+      "title": "Welcome to Our Interactive Experience",
+      "question": "What would you like to explore today?",
+      "options": [
+        {
+          "id": "option1",
+          "text": "Learn About Our Services",
+          "nextQuestion": "services"
+        },
+        {
+          "id": "option2",
+          "text": "Discover Our Products",
+          "nextQuestion": "products"
+        },
+        {
+          "id": "option3",
+          "text": "Contact Information",
+          "nextQuestion": "contact"
+        }
+      ]
+    },
+    "ar": {
+      "id": "home",
+      "title": "مرحباً بك في تجربتنا التفاعلية",
+      "question": "ماذا تود أن تستكشف اليوم؟",
+      "options": [
+        {
+          "id": "option1",
+          "text": "تعرف على خدماتنا",
+          "nextQuestion": "services"
+        },
+        {
+          "id": "option2",
+          "text": "اكتشف منتجاتنا",
+          "nextQuestion": "products"
+        },
+        {
+          "id": "option3",
+          "text": "معلومات الاتصال",
+          "nextQuestion": "contact"
+        }
+      ]
+    },
+    "fa": {
+      "id": "home",
+      "title": "به تجربه تعاملی ما خوش آمدید",
+      "question": "امروز چه چیزی را می‌خواهید کشف کنید؟",
+      "options": [
+        {
+          "id": "option1",
+          "text": "درباره خدمات ما بیاموزید",
+          "nextQuestion": "services"
+        },
+        {
+          "id": "option2",
+          "text": "محصولات ما را کشف کنید",
+          "nextQuestion": "products"
+        },
+        {
+          "id": "option3",
+          "text": "اطلاعات تماس",
+          "nextQuestion": "contact"
+        }
+      ]
+    }
+  },
+  "services": {
+    "en": {
+      "id": "services",
+      "title": "Our Services",
+      "content": "We provide comprehensive digital solutions including web development, mobile applications, and cloud services.",
+      "hasLetter": true,
+      "letterContent": "Thank you for your interest in our services. We would love to discuss how we can help your business grow.",
+      "subQuestion": {
+        "question": "Which service interests you most?",
+        "options": [
+          {
+            "id": "web",
+            "text": "Web Development",
+            "nextQuestion": "web-details"
+          },
+          {
+            "id": "mobile",
+            "text": "Mobile Apps",
+            "nextQuestion": "mobile-details"
+          },
+          {
+            "id": "cloud",
+            "text": "Cloud Services",
+            "nextQuestion": "cloud-details"
+          }
+        ]
+      }
+    },
+    "ar": {
+      "id": "services",
+      "title": "خدماتنا",
+      "content": "نحن نقدم حلول رقمية شاملة تشمل تطوير المواقع والتطبيقات المحمولة وخدمات السحابة.",
+      "hasLetter": true,
+      "letterContent": "شكراً لاهتمامك بخدماتنا. نود مناقشة كيف يمكننا مساعدة عملك على النمو.",
+      "subQuestion": {
+        "question": "أي خدمة تهمك أكثر؟",
+        "options": [
+          {
+            "id": "web",
+            "text": "تطوير المواقع",
+            "nextQuestion": "web-details"
+          },
+          {
+            "id": "mobile",
+            "text": "تطبيقات الجوال",
+            "nextQuestion": "mobile-details"
+          },
+          {
+            "id": "cloud",
+            "text": "خدمات السحابة",
+            "nextQuestion": "cloud-details"
+          }
+        ]
+      }
+    },
+    "fa": {
+      "id": "services",
+      "title": "خدمات ما",
+      "content": "ما راه‌حل‌های دیجیتال جامعی ارائه می‌دهیم شامل توسعه وب، اپلیکیشن‌های موبایل و خدمات ابری.",
+      "hasLetter": true,
+      "letterContent": "از علاقه شما به خدمات ما متشکریم. دوست داریم در مورد چگونگی کمک به رشد کسب‌وکار شما صحبت کنیم.",
+      "subQuestion": {
+        "question": "کدام خدمت بیشتر مورد علاقه شماست؟",
+        "options": [
+          {
+            "id": "web",
+            "text": "توسعه وب",
+            "nextQuestion": "web-details"
+          },
+          {
+            "id": "mobile",
+            "text": "اپلیکیشن موبایل",
+            "nextQuestion": "mobile-details"
+          },
+          {
+            "id": "cloud",
+            "text": "خدمات ابری",
+            "nextQuestion": "cloud-details"
+          }
+        ]
+      }
+    }
+  },
+  "products": {
+    "en": {
+      "id": "products",
+      "title": "Our Products",
+      "content": "Discover our innovative product line designed to streamline your workflow and boost productivity.",
+      "hasLetter": false,
+      "subQuestion": {
+        "question": "What type of product are you looking for?",
+        "options": [
+          {
+            "id": "software",
+            "text": "Software Solutions",
+            "nextQuestion": "software-details"
+          },
+          {
+            "id": "hardware",
+            "text": "Hardware Products",
+            "nextQuestion": "hardware-details"
+          }
+        ]
+      }
+    },
+    "ar": {
+      "id": "products",
+      "title": "منتجاتنا",
+      "content": "اكتشف خط منتجاتنا المبتكر المصمم لتبسيط سير عملك وزيادة الإنتاجية.",
+      "hasLetter": false,
+      "subQuestion": {
+        "question": "ما نوع المنتج الذي تبحث عنه؟",
+        "options": [
+          {
+            "id": "software",
+            "text": "حلول البرمجيات",
+            "nextQuestion": "software-details"
+          },
+          {
+            "id": "hardware",
+            "text": "منتجات الأجهزة",
+            "nextQuestion": "hardware-details"
+          }
+        ]
+      }
+    },
+    "fa": {
+      "id": "products",
+      "title": "محصولات ما",
+      "content": "محصولات نوآورانه ما را کشف کنید که برای ساده‌سازی جریان کار و افزایش بهره‌وری طراحی شده‌اند.",
+      "hasLetter": false,
+      "subQuestion": {
+        "question": "به دنبال چه نوع محصولی هستید؟",
+        "options": [
+          {
+            "id": "software",
+            "text": "راه‌حل‌های نرم‌افزاری",
+            "nextQuestion": "software-details"
+          },
+          {
+            "id": "hardware",
+            "text": "محصولات سخت‌افزاری",
+            "nextQuestion": "hardware-details"
+          }
+        ]
+      }
+    }
+  },
+  "contact": {
+    "en": {
+      "id": "contact",
+      "title": "Contact Us",
+      "content": "Get in touch with our team. We are here to help and answer any questions you may have.",
+      "hasLetter": true,
+      "letterContent": "We look forward to hearing from you and discussing how we can work together.",
+      "contactInfo": {
+        "email": "hello@interactiveletter.com",
+        "phone": "+1 (555) 123-4567",
+        "address": "123 Innovation Street, Tech City, TC 12345"
+      }
+    },
+    "ar": {
+      "id": "contact",
+      "title": "اتصل بنا",
+      "content": "تواصل مع فريقنا. نحن هنا للمساعدة والإجابة على أي أسئلة قد تكون لديك.",
+      "hasLetter": true,
+      "letterContent": "نتطلع إلى سماع رأيك ومناقشة كيف يمكننا العمل معاً.",
+      "contactInfo": {
+        "email": "hello@interactiveletter.com",
+        "phone": "+1 (555) 123-4567",
+        "address": "123 شارع الابتكار، مدينة التقنية، TC 12345"
+      }
+    },
+    "fa": {
+      "id": "contact",
+      "title": "تماس با ما",
+      "content": "با تیم ما در تماس باشید. ما اینجا هستیم تا کمک کنیم و به سوالات شما پاسخ دهیم.",
+      "hasLetter": true,
+      "letterContent": "مشتاقانه منتظر شنیدن نظر شما و بحث در مورد چگونگی همکاری هستیم.",
+      "contactInfo": {
+        "email": "hello@interactiveletter.com",
+        "phone": "+1 (555) 123-4567",
+        "address": "۱۲۳ خیابان نوآوری، شهر فناوری، TC 12345"
+      }
+    }
+  },
+  "web-details": {
+    "en": {
+      "id": "web-details",
+      "title": "Web Development Services",
+      "content": "Our web development team creates modern, responsive, and scalable web applications using the latest technologies.",
+      "hasLetter": true,
+      "letterContent": "Let's build your dream website together. Our team is ready to turn your vision into reality.",
+      "features": [
+        "Custom Web Applications",
+        "E-commerce Solutions",
+        "Content Management Systems",
+        "Progressive Web Apps",
+        "API Development"
+      ]
+    },
+    "ar": {
+      "id": "web-details",
+      "title": "خدمات تطوير المواقع",
+      "content": "فريق تطوير المواقع لدينا ينشئ تطبيقات ويب حديثة ومتجاوبة وقابلة للتوسع باستخدام أحدث التقنيات.",
+      "hasLetter": true,
+      "letterContent": "لنبني موقع أحلامك معاً. فريقنا جاهز لتحويل رؤيتك إلى واقع.",
+      "features": [
+        "تطبيقات ويب مخصصة",
+        "حلول التجارة الإلكترونية",
+        "أنظمة إدارة المحتوى",
+        "تطبيقات الويب التقدمية",
+        "تطوير واجهات برمجة التطبيقات"
+      ]
+    },
+    "fa": {
+      "id": "web-details",
+      "title": "خدمات توسعه وب",
+      "content": "تیم توسعه وب ما اپلیکیشن‌های وب مدرن، ریسپانسیو و مقیاس‌پذیر با استفاده از جدیدترین تکنولوژی‌ها ایجاد می‌کند.",
+      "hasLetter": true,
+      "letterContent": "بیایید وب‌سایت رویایی شما را با هم بسازیم. تیم ما آماده است تا رویای شما را به واقعیت تبدیل کند.",
+      "features": [
+        "اپلیکیشن‌های وب سفارشی",
+        "راه‌حل‌های تجارت الکترونیک",
+        "سیستم‌های مدیریت محتوا",
+        "اپلیکیشن‌های وب پیشرفته",
+        "توسعه API"
+      ]
+    }
+  }
+}
+
